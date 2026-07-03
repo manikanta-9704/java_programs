@@ -1,10 +1,12 @@
 package com.labtasks;
 
 public class Task10 {
+	//area of rectangle
 	void calculateArea(){
 		float length=20;
 		float breadth=30;
-			System.out.println(length*breadth);
+		float area = length*breadth;
+			System.out.println("area of the rectangle:"+area);
 		
 	}
 	public static void main(String[] args) {
