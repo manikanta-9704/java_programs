@@ -13,6 +13,10 @@ public class Task10 {
 		//Write a Java program to create a class "Rectangle" with a method "calculateArea()". The method should take no arguments and return no value. Initialize the length and breadth inside the method, calculate the area of the rectangle, and display the result.
 Task10 t1=new Task10();
 t1.calculateArea();
+byte a=10;
+byte b=20;
+int c= (int)30;
+
 	}
 
 }
