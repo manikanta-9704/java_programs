@@ -1,5 +1,6 @@
 package com.practice;
 
+
 public class Main {
 	static int college_id = 100;
 	static String college_name = "unknown";

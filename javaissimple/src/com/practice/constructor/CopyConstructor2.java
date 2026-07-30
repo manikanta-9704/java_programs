@@ -11,11 +11,16 @@ class Employee1{
 		this.department=department;
 		
 	}
-	Employee1(Employee1 update){
-		this.id=update.id;
-		this.name=update.name;
-		this.salary=update.salary;
-		this.department=update.department;
+	Employee1(Employee1 update,int id){
+		this(id,"unknown",0.0,"unknown");
+//		this.id=update.id;
+//		this.name=update.name;
+//		this.salary=update.salary;
+//		this.department=update.department;
+		
+	}
+	Employee1(){
+		
 		
 	}
 	void show() {
@@ -32,7 +37,7 @@ public class CopyConstructor2 {
 		
 		Employee1 e1=new Employee1(101,"mani",30000,"training");
 		e1.show();
-		Employee1 e2=new Employee1(e1);
+		Employee1 e2=new Employee1(e1,102);
 		e2.salary=40000;
 		e2.department="javadev";
 		e2.show();
