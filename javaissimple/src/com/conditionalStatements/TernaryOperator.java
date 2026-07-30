@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class TernaryOperator {
 	static Scanner sc=new Scanner(System.in);
 	void Largenum(){
+		//find large number  among two numbers 
 		System.out.print("enter 1st number:");
 		int num1=sc.nextInt();
 		System.out.print("enter 2nd number:");
