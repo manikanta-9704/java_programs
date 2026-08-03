@@ -3,6 +3,10 @@ import java.util.Scanner;
 
 public class TernaryOperator {
 	static Scanner sc=new Scanner(System.in);
+	void devideby(int num) {
+		String result=num%5==0?"divisible by 5":"not divisible by 5";
+		System.out.println(result);
+	}
 	void Largenum(){
 		//find large number  among two numbers 
 		System.out.print("enter 1st number:");

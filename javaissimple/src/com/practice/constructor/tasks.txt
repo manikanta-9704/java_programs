@@ -1,0 +1,370 @@
+1)Scholarship Processing
+
+Fields
+
+id
+name
+marks
+scholarship
+
+Create copied object.
+
+Condition:
+
+marks >= 90
+
+Scholarship = true
+
+Else false
+
+Task 6: Insurance Renewal
+
+Fields
+
+policyNo
+customerName
+premium
+expired
+
+Copy object.
+
+If expired
+
+Increase premium by 10%.
+
+Level 3 - Nested Objects (Deep Copy)
+Task 7: Employee with Address
+
+Create
+
+Employee
+
+contains
+
+Address
+
+Address fields
+
+city
+street
+pincode
+
+Implement a deep copy constructor.
+
+After copying,
+
+Change copied employee's city.
+
+Original city must remain unchanged.
+
+Task 8: Hospital Patient
+
+Patient
+
+patientId
+name
+Address
+
+Address
+
+city
+ward
+room
+
+Create deep copy.
+
+Change copied patient's room.
+
+Verify original is unchanged.
+
+Task 9: Passport Application
+
+Person
+
+id
+name
+Address
+
+Deep copy.
+
+Update copied address after passport verification.
+
+Original address must remain same.
+
+Level 4 - Arrays Inside Objects
+Task 10: Student Marks
+
+Student
+
+id
+name
+int[] marks
+
+Copy constructor must create a new marks array.
+
+After copying,
+
+Change
+
+marks[2]
+
+Original array should not change.
+
+Task 11: Weekly Expense Tracker
+
+Fields
+
+userId
+name
+double[] expenses
+
+Deep copy array.
+
+Increase copied Saturday expense.
+
+Original expenses should remain same.
+
+Task 12: Cricket Player
+
+Fields
+
+playerId
+name
+int[] matchScores
+
+Copy constructor.
+
+Find average score of copied player only.
+
+Original should remain unchanged.
+
+Level 5 - Arrays of Objects
+Task 13: Employee Database Clone
+
+Create array of 5 employees.
+
+Create another array.
+
+Every employee in second array must be created using copy constructor.
+
+Increase salary of copied employees only.
+
+Original array must remain unchanged.
+
+Task 14: Student Database Backup
+
+Create
+
+Student students[]
+
+Create
+
+backupStudents[]
+
+using copy constructors.
+
+Update copied students.
+
+Original data must remain intact.
+
+Task 15: Product Inventory Snapshot
+
+Create
+
+Product[]
+
+Copy all products.
+
+Reduce copied product stock after sales.
+
+Original inventory should remain unchanged.
+
+Level 6 - Objects Containing Arrays + Nested Objects
+Task 16: Employee Profile
+
+Employee
+
+id
+name
+Address
+double[] monthlySalary
+
+Implement full deep copy.
+
+Changing
+
+city
+monthlySalary[5]
+
+must not affect original.
+
+Task 17: Hospital Record
+
+Patient
+
+patientId
+name
+Address
+double[] testResults
+
+Deep copy.
+
+Update copied report.
+
+Verify original.
+
+Task 18: Student Academic Record
+
+Student
+
+id
+name
+Address
+int[] semesterMarks
+
+Deep copy.
+
+Calculate average.
+
+Update copied semester.
+
+Original unchanged.
+
+Level 7 - Business Simulation
+Task 19: Expense Tracker Versioning
+
+Whenever a user edits expenses:
+
+Instead of modifying original,
+
+Create
+
+ExpenseTracker updatedVersion
+
+using copy constructor.
+
+Only update copied object.
+
+Print
+
+Before Update
+
+and
+
+After Update
+Task 20: ATM Transaction History
+
+Every withdrawal creates a copied account object.
+
+If
+
+balance >= withdrawal
+
+deduct money.
+
+Else
+
+Print
+
+Insufficient Balance
+
+Original account should remain unchanged.
+
+Task 21: Order Processing
+
+Order
+
+orderId
+customerName
+Address
+double[] itemPrices
+
+Copy order.
+
+Apply discount to copied order only.
+
+Original bill must remain unchanged.
+
+Level 8 - Challenge Problems (Interview Level)
+Task 22: Company Backup System
+
+Company
+
+companyId
+name
+Employee[] employees
+
+Each Employee contains:
+
+Address
+
+Implement a complete deep copy.
+
+Changing:
+
+employee salary
+employee city
+
+must not affect original company.
+
+Task 23: School Management System
+
+School
+
+schoolId
+name
+Student[]
+
+Student
+
+Address
+int[] marks
+
+Implement complete deep copy for the entire object graph.
+
+Task 24: Library Archive
+
+Library
+
+libraryId
+name
+Book[]
+
+Book
+
+author
+price
+
+Clone the library.
+
+Increase copied book prices.
+
+Original library remains unchanged.
+
+Task 25: Banking Backup System (Master Challenge)
+
+Design the following classes:
+
+Bank
+
+contains
+
+Customer[]
+
+Each Customer contains
+
+Address
+
+and
+
+double[] transactions
+
+Requirements:
+
+Implement a deep copy constructor for every class.
+Copy the entire bank.
+Update:
+customer address
+one transaction
+customer balance
+Ensure the original bank data remains completely unchanged.
