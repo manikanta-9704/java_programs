@@ -6,6 +6,8 @@ public class Login {
 			if(password.equalsIgnoreCase("12345")) {
 				System.out.println("log in successfull😊😊");
 				System.out.println("welcome");
+			}else {
+				System.out.println("incorrect password");
 			}
 		}else {
 			System.out.println("invalid credintials");

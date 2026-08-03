@@ -11,12 +11,9 @@ public class Main {
 		String password=sc.nextLine();
 		Login user1=new Login();
 		user1.login(name,password);
-		System.out.println("1.chack balance");
-		System.out.println("2.withdraw");
-		System.out.println("3.deposit");
-		System.out.println("4.mini statement");
-		System.out.println("5.exit");
-		System.out.print("select your service:");
+		System.out.println("1.savings");
+		System.out.println("2.current");
+		System.out.print("select account type:");
 		int choice=sc.nextInt();
 		UserService s=new UserService();
 		s.service(choice);
