@@ -25,7 +25,7 @@ public class PrimeNumbers {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		System.out.print("enter a number:");
-		int num=6;
+		int num=sc.nextInt();;
 		primeNumber(num);
 		
 		sc.close();
