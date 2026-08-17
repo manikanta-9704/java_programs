@@ -237,9 +237,42 @@ public class Main {
 			    }
 			}
 
+
 			case 5 -> {
 
-				System.out.println("Delete Employee - Coming Soon");
+			    System.out.print("Enter Employee ID to delete: ");
+			    int deleteId = sc.nextInt();
+
+			    Employee employee = service.foundById(deleteId);
+
+			    if (employee == null) {
+
+			        System.out.println("Employee not found.");
+
+			    } else {
+
+			        employee.display();
+
+			        System.out.println("\nAre you sure you want to delete this employee?");
+			        System.out.println("1. Yes");
+			        System.out.println("2. No");
+
+			        System.out.print("Enter choice: ");
+			        int confirm = sc.nextInt();
+
+			        if (confirm == 1) {
+
+			            boolean deleted = service.deleteEmployee(deleteId);
+
+			            if (deleted) {
+			                System.out.println("Employee deleted successfully.");
+			            }
+
+			        } else {
+
+			            System.out.println("Delete cancelled.");
+			        }
+			    }
 			}
 
 			case 6 -> {

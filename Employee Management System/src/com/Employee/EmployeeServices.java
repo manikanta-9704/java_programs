@@ -130,5 +130,20 @@ public class EmployeeServices {
 
 	    return true;
 	}
+	public boolean deleteEmployee(int id) {
+		int index=-1;
+		for(int i=0;i<employeeCount;i++) {
+			if(employees[i].getId()==id) {
+				index=i;
+			}
+		}
+		for(int i=index;i<employeeCount;i++) {
+			employees[i]=employees[i+1];
+			
+		}
+		employees[employeeCount-1]=null;
+		employeeCount--;
+		return true;
+	}
 
 }
