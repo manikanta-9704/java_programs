@@ -33,7 +33,7 @@ public void setGender(String gender) {
 public String getGender() {
 	return gender;
 }
-public void setdepartment(String department) {
+public void setDepartment(String department) {
 	this.department=department;
 }
 public String getDepartment() {

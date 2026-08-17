@@ -113,7 +113,7 @@ public class Main {
 					}
 
 					case 3 -> {
-sc.nextLine();
+                        sc.nextLine();
 						System.out.print("enter department name:");
 						String deptName=sc.nextLine();
 						service.foundByDepartment(deptName);
@@ -134,23 +134,107 @@ sc.nextLine();
 			}
 
 			case 4 -> {
-				System.out.println("1.update department");
-				System.out.println("2.update designation");
-				System.out.println("update salary");
-				int updateChoice;
-				do {
-					System.out.print("enter choice:");
-					updateChoice=sc.nextInt();
-					switch(updateChoice) {
-					case 1->{
-						sc.nextLine();
-						System.out.print("enter updated department:");
-						String updatedDepartment=sc.nextLine();
-					}
-					}
-					
-				}while(updateChoice!=3);
 
+			    System.out.print("Enter Employee ID to update: ");
+			    int updateId = sc.nextInt();
+
+			    Employee employee = service.foundById(updateId);
+
+			    if (employee == null) {
+
+			        System.out.println("Employee not found.");
+
+			    } else {
+
+			        int updateChoice;
+
+			        do {
+
+			            System.out.println("\n===== UPDATE EMPLOYEE =====");
+
+			            System.out.println("1. Update Name");
+			            System.out.println("2. Update Gender");
+			            System.out.println("3. Update Department");
+			            System.out.println("4. Update Designation");
+			            System.out.println("5. Update Salary");
+			            System.out.println("6. Back");
+
+			            System.out.print("Enter choice: ");
+			            updateChoice = sc.nextInt();
+
+			            switch (updateChoice) {
+
+			            case 1 -> {
+
+			                sc.nextLine();
+
+			                System.out.print("Enter new name: ");
+			                String name = sc.nextLine();
+
+			                service.updateName(updateId, name);
+
+			                System.out.println("Name updated successfully.");
+			            }
+
+			            case 2 -> {
+
+			                sc.nextLine();
+
+			                System.out.print("Enter new gender: ");
+			                String gender = sc.nextLine();
+
+			                service.updateGender(updateId, gender);
+
+			                System.out.println("Gender updated successfully.");
+			            }
+
+			            case 3 -> {
+
+			                sc.nextLine();
+
+			                System.out.print("Enter new department: ");
+			                String department = sc.nextLine();
+
+			                service.updateDepartment(updateId, department);
+
+			                System.out.println("Department updated successfully.");
+			            }
+
+			            case 4 -> {
+
+			                sc.nextLine();
+
+			                System.out.print("Enter new designation: ");
+			                String designation = sc.nextLine();
+
+			                service.updateDesignation(updateId, designation);
+
+			                System.out.println("Designation updated successfully.");
+			            }
+
+			            case 5 -> {
+
+			                System.out.print("Enter new salary: ");
+			                double salary = sc.nextDouble();
+
+			                service.updateSalary(updateId, salary);
+
+			                System.out.println("Salary updated successfully.");
+			            }
+
+			            case 6 -> {
+
+			                System.out.println("Returning to main menu...");
+			            }
+
+			            default -> {
+
+			                System.out.println("Invalid choice.");
+			            }
+			            }
+
+			        } while (updateChoice != 6);
+			    }
 			}
 
 			case 5 -> {

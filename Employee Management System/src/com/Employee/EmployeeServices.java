@@ -73,5 +73,62 @@ public class EmployeeServices {
 	        System.out.println("No employees found in this department.");
 	    }
 	}
+	public boolean updateName(int id,String name) {
+		Employee emp=foundById(id);
+		if(emp==null) {
+			System.out.println("no employee found");
+			return false;
+		}
+		emp.setName(name);
+		return true;
+	}
+	public boolean updateGender(int id, String gender) {
+
+	    Employee employee = foundById(id);
+
+	    if (employee == null) {
+	        return false;
+	    }
+
+	    employee.setGender(gender);
+
+	    return true;
+	}
+	public boolean updateDepartment(int id, String department) {
+
+	    Employee employee = foundById(id);
+
+	    if (employee == null) {
+	        return false;
+	    }
+
+	    employee.setDepartment(department);
+
+	    return true;
+	}
+	public boolean updateDesignation(int id, String designation) {
+
+	    Employee employee = foundById(id);
+
+	    if (employee == null) {
+	        return false;
+	    }
+
+	    employee.setDesignation(designation);
+
+	    return true;
+	}
+	public boolean updateSalary(int id, double salary) {
+
+	    Employee employee = foundById(id);
+
+	    if (employee == null) {
+	        return false;
+	    }
+
+	    employee.setSalary(salary);
+
+	    return true;
+	}
 
 }
