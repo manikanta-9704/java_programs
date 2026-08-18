@@ -40,7 +40,7 @@ public class MultipleArraysSum {
 		for(int i=0;i<maxLength;i++) {
 			System.out.print(+b[i]+" ");
 		}
-
+sc.close();
 	}
 
 }
