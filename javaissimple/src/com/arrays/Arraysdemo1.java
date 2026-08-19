@@ -7,8 +7,18 @@ public class Arraysdemo1 {
 //	Read marks using Scanner.
 //	Store them in the array.
 //	Display all marks using a for loop.
-
-	 void main(String[] args) {
+	void display() {
+		int[] arr=new int[5];
+		String[] name=new String[5];
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter names:");
+		for(int i=0;i<name.length;i++) {
+			name[i]=sc.nextLine();
+		}
+		System.out.println(name[2]);
+		
+	}
+         void  main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("enter array size:");
 		int n = sc.nextInt();
@@ -23,10 +33,10 @@ public class Arraysdemo1 {
 			System.out.print(num[i]+" ");
 		}
 		
+		display();
 		
 		
-		
-	
+//	sc.close();
 
 	}
 
