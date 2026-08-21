@@ -19,7 +19,7 @@ for(int i=0;i<arr.length-1;i++) {
 	if(start==end) {
 		continue;
 	}
-if(start<end) {
+if(start!=end) {
 	for(int j=start+1;j<end;j++) {
 	System.out.println(j);
 	}
