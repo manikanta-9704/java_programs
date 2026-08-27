@@ -14,9 +14,10 @@ public class ReverseDiagonalSum {
 		}
 		System.out.println("diagonal elements are:");
 		for(int i=0;i<arr.length;i++) {
-			for(int j=0;j<arr.length;j++) {
+			for(int j=0;j<arr[i].length;j++) {
 				if(i+j==arr.length-1) {
-					System.out.println(arr[i][j]);
+					System.out.print(arr[i][j]+" ");
+					sum+=arr[i][j];
 				}
 			}
 		}
