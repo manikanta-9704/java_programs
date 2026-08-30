@@ -46,7 +46,11 @@ public String getDesignation() {
 	return designation;
 }
 public void setSalary(double salary) {
+	if(salary>0) {
 	this.salary=salary;
+	}else {
+		System.out.println("salary is invalid");
+	}
 }
 public double salary() {
 	return salary;
