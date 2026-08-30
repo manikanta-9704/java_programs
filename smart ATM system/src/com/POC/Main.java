@@ -10,15 +10,16 @@ public class Main {
 		System.out.print("enter password:");
 		String password=sc.nextLine();
 		Login user1=new Login();
-		user1.login(name,password);
+//		user1.login(name,password);
+		boolean status=user1.login(name,password);
+		if(status) {
 		System.out.println("1.savings");
 		System.out.println("2.current");
 		System.out.print("select account type:");
 		int choice=sc.nextInt();
 		UserService s=new UserService();
 		s.service(choice);
-		
-		
+		}
 		sc.close();
 
 	}

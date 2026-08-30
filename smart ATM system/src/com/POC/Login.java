@@ -1,19 +1,22 @@
 package com.POC;
 
 public class Login {
-	void login(String name,String password) {
+
+	
+	boolean login(String name,String password) {
+		boolean flag=false;
 		if(name.equalsIgnoreCase("manikanta")) {
 			if(password.equalsIgnoreCase("12345")) {
 				System.out.println("log in successfull😊😊");
 				System.out.println("welcome");
-			}else {
-				System.out.println("incorrect password");
+				flag=true;
 			}
 		}else {
 			System.out.println("invalid credintials");
 		}
+		return flag;
 		
 	}
 	
+		}
 
-}
