@@ -7,6 +7,9 @@ private String gender;
 private String department;
 private String designation;
 private double salary;
+Employee(){
+	
+}
 Employee(int id,String name,String gender,String department,String designation,double salary){
 	this.id=id;
 	this.name=name;

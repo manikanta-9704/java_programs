@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class UserService {
 	Scanner sc=new Scanner(System.in);
-	double amount=5000;
+	private double amount=5000;
 	void service(int choice) {
 
 	switch(choice) {

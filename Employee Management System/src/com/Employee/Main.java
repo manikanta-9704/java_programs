@@ -7,13 +7,10 @@ public class Main {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-
 		EmployeeServices service = new EmployeeServices();
-
 		int choice;
 
 		do {
-
 			System.out.println("\n================================");
 			System.out.println("   EMPLOYEE MANAGEMENT SYSTEM");
 			System.out.println("================================");
@@ -60,8 +57,8 @@ public class Main {
 			}
 
 			case 2 -> {
-
 				service.displayEmployees();
+				
 			}
 
 			case 3 -> {

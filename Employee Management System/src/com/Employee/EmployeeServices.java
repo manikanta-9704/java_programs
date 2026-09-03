@@ -1,7 +1,7 @@
 package com.Employee;
 
-public class EmployeeServices {
-	private Employee[] employees=new Employee[100];
+public class EmployeeServices{
+	Employee[] employees=new Employee[100];
 	private int employeeCount=0;
 	public boolean isEmployeeExist(int id) {
 		
@@ -147,3 +147,4 @@ public class EmployeeServices {
 	}
 
 }
+  
