@@ -3,6 +3,50 @@ package com.expensetracker;
 import java.util.Scanner;
 
 public class Main {
+	 public static ExpenseType selectExpenseType(Scanner sc) {
+
+	        System.out.println("\nSelect Expense Type:");
+
+	        System.out.println("1. Food");
+	        System.out.println("2. Travel");
+	        System.out.println("3. Shopping");
+	        System.out.println("4. Bills");
+	        System.out.println("5. Entertainment");
+	        System.out.println("6. Medical");
+	        System.out.println("7. Other");
+
+	        System.out.print("Enter type: ");
+
+	        int typeChoice = sc.nextInt();
+
+	        switch (typeChoice) {
+
+	            case 1:
+	                return ExpenseType.FOOD;
+
+	            case 2:
+	                return ExpenseType.TRAVEL;
+
+	            case 3:
+	                return ExpenseType.SHOPPING;
+
+	            case 4:
+	                return ExpenseType.BILLS;
+
+	            case 5:
+	                return ExpenseType.ENTERTAINMENT;
+
+	            case 6:
+	                return ExpenseType.MEDICAL;
+
+	            case 7:
+	                return ExpenseType.OTHER;
+
+	            default:
+	                System.out.println("Invalid type. Other selected.");
+	                return ExpenseType.OTHER;
+	        }
+	    }
 
     public static void main(String[] args) {
 
@@ -128,48 +172,5 @@ public class Main {
         sc.close();
     }
 
-    public static ExpenseType selectExpenseType(Scanner sc) {
-
-        System.out.println("\nSelect Expense Type:");
-
-        System.out.println("1. Food");
-        System.out.println("2. Travel");
-        System.out.println("3. Shopping");
-        System.out.println("4. Bills");
-        System.out.println("5. Entertainment");
-        System.out.println("6. Medical");
-        System.out.println("7. Other");
-
-        System.out.print("Enter type: ");
-
-        int typeChoice = sc.nextInt();
-
-        switch (typeChoice) {
-
-            case 1:
-                return ExpenseType.FOOD;
-
-            case 2:
-                return ExpenseType.TRAVEL;
-
-            case 3:
-                return ExpenseType.SHOPPING;
-
-            case 4:
-                return ExpenseType.BILLS;
-
-            case 5:
-                return ExpenseType.ENTERTAINMENT;
-
-            case 6:
-                return ExpenseType.MEDICAL;
-
-            case 7:
-                return ExpenseType.OTHER;
-
-            default:
-                System.out.println("Invalid type. Other selected.");
-                return ExpenseType.OTHER;
-        }
-    }
+   
 }
